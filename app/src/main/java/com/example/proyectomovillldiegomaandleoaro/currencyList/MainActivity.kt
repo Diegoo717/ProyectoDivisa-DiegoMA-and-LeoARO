@@ -1,4 +1,4 @@
-package com.example.proyectomovillldiegomaandleoaro
+package com.example.proyectomovillldiegomaandleoaro.currencyList
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
