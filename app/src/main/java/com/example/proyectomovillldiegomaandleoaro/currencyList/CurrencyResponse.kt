@@ -1,12 +1,10 @@
 package com.example.proyectomovillldiegomaandleoaro.currencyList
 
 data class CurrencyResponse(
-    var time_last_update_unix: Int,
-    var time_last_update_utc: String,
-    var time_next_update_unix: Int,
-    var time_next_update_utc: String,
-    var base_code: String) {
-
-
-
-}
+    val time_last_update_unix: Long,
+    val time_last_update_utc: String,
+    val time_next_update_unix: Long,
+    val time_next_update_utc: String,
+    val base_code: String,
+    val conversion_rates: Map<String, Double>
+)
