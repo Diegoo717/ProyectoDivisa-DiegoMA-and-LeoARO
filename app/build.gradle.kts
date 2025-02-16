@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("org.jetbrains.kotlin.kapt")  // Asegúrate de que esté correctamente configurado
     alias(libs.plugins.kotlin.compose)
 }
 
@@ -40,13 +41,28 @@ android {
 }
 
 dependencies {
-
-    // Dependencias
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.6")
+    // Dependencias principales
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+    implementation("androidx.work:work-runtime-ktx:2.9.1")
 
+    // Room
+    implementation("androidx.room:room-runtime:2.6.1")  // Actualizado a la última versión
+    kapt("androidx.room:room-compiler:2.6.1")  // Cambiado a kapt
+    implementation("androidx.room:room-ktx:2.6.1")
+
+
+    // Otras dependencias de lifecycle y compose
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+    implementation("androidx.compose.ui:ui:1.5.1")
+    implementation("androidx.compose.material3:material3:1.1.2")
+    implementation("androidx.compose.runtime:runtime-livedata:1.6.0")
+
+    // Dependencias del catálogo de versiones
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

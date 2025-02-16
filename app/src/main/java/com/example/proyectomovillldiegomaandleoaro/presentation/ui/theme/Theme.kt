@@ -1,4 +1,4 @@
-package com.example.proyectomovillldiegomaandleoaro.ui.theme
+package com.example.proyectomovillldiegomaandleoaro.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build

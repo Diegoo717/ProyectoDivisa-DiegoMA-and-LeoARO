@@ -1,4 +1,4 @@
-package com.example.proyectomovillldiegomaandleoaro.ui.theme
+package com.example.proyectomovillldiegomaandleoaro.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

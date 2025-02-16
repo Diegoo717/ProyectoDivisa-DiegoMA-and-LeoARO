@@ -1,4 +1,4 @@
-package com.example.proyectomovillldiegomaandleoaro.currencyList
+package com.example.proyectomovillldiegomaandleoaro.data
 
 data class CurrencyResponse(
     val time_last_update_unix: Long,
