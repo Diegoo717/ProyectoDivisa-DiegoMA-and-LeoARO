@@ -1,6 +1,7 @@
 package com.example.proyectomovillldiegomaandleoaro.domain
 
 import android.app.Application
+import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.asLiveData
 import com.example.proyectomovillldiegomaandleoaro.data.AppDatabase
